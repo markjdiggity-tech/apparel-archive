@@ -1,0 +1,147 @@
+/* ============================================= */
+/* 1. RESET & VARIABLES                           */
+/* ============================================= */
+
+/* Browsers add their own default spacing to elements. This line strips that out
+   so OUR spacing choices are the only ones in play, instead of fighting hidden defaults. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* box-sizing: border-box means padding/borders get INCLUDED in an element's
+       width instead of added on top of it. Makes sizing much more predictable. */
+}
+
+/* CSS variables (the --name: value; syntax) let us define a color ONCE here
+   and reuse it everywhere with var(--name). Change it once, it updates everywhere. */
+:root {
+    --paper: #f2ede3;        /* warm off-white background, like aged paper/tag stock */
+    --ink: #1e1c19;          /* near-black text */
+    --tag-red: #b3402c;      /* clay-red accent, like an old price tag stamp */
+    --line: #d8d0bd;         /* soft border/divider color */
+}
+
+body {
+    background-color: var(--paper);
+    color: var(--ink);
+    font-family: 'Space Mono', monospace; /* the "utility" font, used for body text */
+    line-height: 1.5;
+}
+
+/* ============================================= */
+/* 2. HEADER                                      */
+/* ============================================= */
+
+.site-header {
+    text-align: center;
+    padding: 3rem 1rem 2rem;
+    border-bottom: 2px dashed var(--line);
+    /* dashed border here echoes a perforated tag edge, ties into our "price tag" theme */
+}
+
+.logo {
+    font-family: 'Archivo Black', sans-serif; /* the bold display font, used sparingly for impact */
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    /* clamp(min, ideal, max) = the font size scales with screen width but never
+       goes below 2rem or above 3.5rem. This is a simple way to make text responsive. */
+    letter-spacing: -0.02em;
+}
+
+.tagline {
+    margin-top: 0.5rem;
+    color: var(--ink);
+    opacity: 0.7;
+    font-size: 0.95rem;
+}
+
+/* ============================================= */
+/* 3. CATALOG GRID                                */
+/* ============================================= */
+
+.catalog {
+    display: grid;
+    /* auto-fill + minmax is the key trick: it fits as many 260px-minimum columns
+       as will comfortably fit the screen width, and stretches them evenly (1fr).
+       This is what makes the grid responsive without writing a single @media query. */
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 2rem;
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto; /* centers the whole grid on wide screens */
+}
+
+.item-card {
+    background: white;
+    border: 1px solid var(--line);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.15s ease;
+    /* transition means any property change (like transform below) animates
+       smoothly over 0.15 seconds instead of snapping instantly. */
+}
+
+.item-card:hover {
+    transform: translateY(-4px);
+    /* on hover, nudge the card up slightly — a small signal that it's interactive */
+}
+
+.item-photo {
+    width: 100%;
+    aspect-ratio: 3 / 4; /* keeps photo proportions consistent across every card */
+    object-fit: cover;   /* crops the image to fill the box instead of squishing it */
+    background: var(--line); /* shows as a placeholder color until you add real photos */
+}
+
+.item-info {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.item-title {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.item-details {
+    font-size: 0.85rem;
+    opacity: 0.65;
+}
+
+.item-price {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--tag-red);
+    margin-top: 0.25rem;
+}
+
+.inquire-btn {
+    margin-top: 0.75rem;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    background: var(--ink);
+    color: var(--paper);
+    padding: 0.6rem 1rem;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.85rem;
+    font-weight: 700;
+    transition: background 0.15s ease;
+}
+
+.inquire-btn:hover {
+    background: var(--tag-red);
+}
+
+/* ============================================= */
+/* 4. FOOTER                                      */
+/* ============================================= */
+
+.site-footer {
+    text-align: center;
+    padding: 2rem 1rem 3rem;
+    font-size: 0.8rem;
+    opacity: 0.6;
+}

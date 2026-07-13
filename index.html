@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- This line just tells the browser "this is a modern HTML document." Always the first line. -->
+<html lang="en">
+<head>
+    <!-- The <head> holds stuff the BROWSER needs but people don't see on the page itself: -->
+    <!-- page title, character encoding, links to fonts/stylesheets, etc. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ^ that viewport line is what makes your site behave on phones instead of looking zoomed out -->
+
+    <title>The Apparel Archive</title>
+    <!-- ^ this text shows up in the browser tab -->
+
+    <!-- Pulling in two fonts from Google Fonts: a bold condensed display font for headings,
+         and a clean mono font for prices/tags (feels like a price tag / thrift store label) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- This links our separate CSS file so the styling rules apply to this page -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Everything in <body> is what people actually SEE on the page -->
+
+    <header class="site-header">
+        <h1 class="logo">The Apparel Archive</h1>
+        <p class="tagline">Secondhand finds, sourced weekly &mdash; browse below, message to claim</p>
+    </header>
+
+    <!-- This <main> is now EMPTY on purpose. JavaScript (script.js) will read
+         inventory.json and build all the item cards into this container itself. -->
+    <main class="catalog">
+    </main>
+
+    <footer class="site-footer">
+        <p>Provo, UT &bull; New pieces added weekly</p>
+    </footer>
+
+    <!-- Loading our JavaScript file at the very end of <body> so it runs
+         after all the HTML above it already exists on the page. -->
+    <script src="script.js"></script>
+</body>
+</html>

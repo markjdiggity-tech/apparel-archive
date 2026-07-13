@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Levi's Trucker Jacket",
+    "details": "Size M \u2022 Good condition",
+    "price": 28,
+    "image": "images/placeholder.jpg",
+    "instagram": "https://instagram.com/YOUR_HANDLE_HERE"
+  },
+  {
+    "title": "Y2K Racing Graphic Tee",
+    "details": "Size L \u2022 Excellent condition",
+    "price": 16,
+    "image": "images/placeholder.jpg",
+    "instagram": "https://instagram.com/YOUR_HANDLE_HERE"
+  },
+  {
+    "title": "Carhartt Double-Knee Pants",
+    "details": "Size 32x32 \u2022 Good condition",
+    "price": 22,
+    "image": "images/placeholder.jpg",
+    "instagram": "https://instagram.com/YOUR_HANDLE_HERE"
+  },
+  {
+    "title": "Vintage Green Wool Trousers",
+    "details": "Size 34x30 \u2022 Good condition",
+    "price": 20,
+    "image": "images/placeholder.jpg",
+    "instagram": "https://instagram.com/YOUR_HANDLE_HERE"
+  },
+  {
+    "title": "Arc'Teryx Windbreaker Jacket",
+    "details": "Size M \u2022 Good condition",
+    "price": 250,
+    "image": "images/placeholder.jpg",
+    "instagram": "https://instagram.com/YOUR_HANDLE_HERE"
+  }
+]
