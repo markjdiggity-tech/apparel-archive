@@ -1,37 +1,37 @@
 [
   {
-    "title": "Levi's Trucker Jacket",
-    "details": "Size M \u2022 Good condition",
-    "price": 28,
-    "image": "images/placeholder.jpg",
-    "instagram": "https://ig.me/m/markjdiggity"
-  },
-  {
-    "title": "Y2K Racing Graphic Tee",
-    "details": "Size L \u2022 Excellent condition",
-    "price": 16,
-    "image": "images/placeholder.jpg",
-    "instagram": "https://ig.me/m/markjdiggity"
-  },
-  {
-    "title": "Carhartt Double-Knee Pants",
-    "details": "Size 32x32 \u2022 Good condition",
-    "price": 22,
-    "image": "images/placeholder.jpg",
-    "instagram": "https://ig.me/m/markjdiggity"
-  },
-  {
-    "title": "Vintage Green Wool Trousers",
-    "details": "Size 34x30 \u2022 Good condition",
-    "price": 20,
-    "image": "images/placeholder.jpg",
-    "instagram": "https://ig.me/m/markjdiggity"
-  },
-  {
-    "title": "Arc'Teryx Windbreaker Jacket",
-    "details": "Size M \u2022 Good condition",
+    "title": "Arc'teryx Alpha SL Hybrid Jacket",
+    "details": "Size M • Fantastic condition, basically new",
     "price": 250,
-    "image": "images/placeholder.jpg",
+    "image": "images/arcteryx-alpha-sl-jacket.jpg",
+    "instagram": "https://ig.me/m/markjdiggity"
+  },
+  {
+    "title": "Vintage Corduroy Levi's 517-1523 White Tab Pants",
+    "details": "Size 31x35 • Great condition",
+    "price": 30,
+    "image": "images/levi-517-corduroy-pants.jpg",
+    "instagram": "https://ig.me/m/markjdiggity"
+  },
+  {
+    "title": "Vintage Corduroy Levi's 519 White Tab Pants",
+    "details": "Size 32x35.5 • Great condition",
+    "price": 30,
+    "image": "images/levi-519-corduroy-pants.jpg",
+    "instagram": "https://ig.me/m/markjdiggity"
+  },
+  {
+    "title": "Vintage Cream Sweater Vest",
+    "details": "Size L • Good condition, minor stains",
+    "price": 20,
+    "image": "images/cream-sweater-vest.jpg",
+    "instagram": "https://ig.me/m/markjdiggity"
+  },
+  {
+    "title": "Vintage Red and White Nordstrom Hawaiian Shirt",
+    "details": "Size XL • Good condition, minor stains",
+    "price": 20,
+    "image": "images/nordstrom-hawaiian-shirt.jpg",
     "instagram": "https://ig.me/m/markjdiggity"
   },
   {
@@ -40,33 +40,33 @@
     "price": 20,
     "image": "images/olive-wool-trousers.jpg",
     "instagram": "https://ig.me/m/markjdiggity"
-},
-{
+  },
+  {
     "title": "Vintage UCLA Crewneck Sweatshirt",
     "details": "Size XL • Good condition",
     "price": 20,
     "image": "images/ucla-crewneck-sweatshirt.jpg",
     "instagram": "https://ig.me/m/markjdiggity"
-},
-{
+  },
+  {
     "title": "Vintage Checkered Pattern Sweatshirt",
     "details": "Size XL • Good condition",
     "price": 20,
     "image": "images/checkered-sweatshirt.jpg",
     "instagram": "https://ig.me/m/markjdiggity"
-},
-{
+  },
+  {
     "title": "Vintage Single Stitch \"Elkaholic\" T-Shirt",
     "details": "Size XL • Good condition",
     "price": 10,
     "image": "images/elkaholic-tshirt.jpg",
     "instagram": "https://ig.me/m/markjdiggity"
-},
-{
+  },
+  {
     "title": "Vintage Brown Wool Trousers",
     "details": "Size 32x26 • Good condition",
     "price": 20,
     "image": "images/brown-wool-trousers.jpg",
     "instagram": "https://ig.me/m/markjdiggity"
-}
+  }
 ]
